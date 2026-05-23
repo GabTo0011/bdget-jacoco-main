@@ -98,6 +98,7 @@ jobs:
 
       - name: Run SonarCloud
         env:
+          
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           mvn verify sonar:sonar \
